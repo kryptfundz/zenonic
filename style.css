@@ -55,6 +55,10 @@ header .container {
     height: 40px;
 }
 
+.logo h1{
+    font-size: 1rem;
+}
+
 .btn {
     padding: 10px 20px;
     border: none;
