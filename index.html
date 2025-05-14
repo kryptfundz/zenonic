@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenon Founders Pass</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Zenon Logo">
+                <h1>Zenon Founders Pass</h1>
+            </div>
+            <button id="connectWallet" class="btn">Connect Wallet</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Exclusive Access Starts Here</h2>
+                    <p>Own a piece of Zenon history with our limited edition Founders Pass NFT. Only 10,000 will ever exist.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span id="mintedCount">0</span>
+                            <span>Minted</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>10,000</span>
+                            <span>Total Supply</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>0.01 ETH</span>
+                            <span>Price</span>
+                        </div>
+                    </div>
+                    <button id="mintButton" class="btn btn-primary" disabled>Mint Your Pass</button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/nft-preview.jpg" alt="NFT Preview" id="nftPreview">
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Pass Benefits</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-gem"></i>
+                        <h3>Exclusive Access</h3>
+                        <p>Gain entry to private Zenon events, drops, and community channels.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Founder Status</h3>
+                        <p>Be recognized as an early supporter of the Zenon ecosystem.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Future Rewards</h3>
+                        <p>Eligibility for airdrops, staking rewards, and other benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Zenon. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mintModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Mint Your Founders Pass</h2>
+            <div class="modal-body">
+                <div class="mint-status">
+                    <p id="mintStatus">Ready to mint your exclusive Zenon Founders Pass NFT.</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="mintProgress"></div>
+                    </div>
+                </div>
+                <button id="confirmMint" class="btn btn-primary">Confirm Mint</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.umd.min.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
